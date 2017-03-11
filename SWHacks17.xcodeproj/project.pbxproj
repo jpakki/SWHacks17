@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		94AC66B01E73D272007DCCA2 /* CaregiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */; };
-		94AC66B91E73E530007DCCA2 /* Caregiver+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66B71E73E530007DCCA2 /* Caregiver+CoreDataClass.swift */; };
+		94AC66B91E73E530007DCCA2 /* Caregiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66B71E73E530007DCCA2 /* Caregiver.swift */; };
 		94AC66BA1E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66B81E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift */; };
+		94AC66BC1E73EC34007DCCA2 /* caregiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66BB1E73EC34007DCCA2 /* caregiverTableViewCell.swift */; };
 		94B124321E739D150034CEFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B124311E739D150034CEFC /* AppDelegate.swift */; };
 		94B124341E739D150034CEFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B124331E739D150034CEFC /* ViewController.swift */; };
 		94B124371E739D160034CEFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B124351E739D160034CEFC /* Main.storyboard */; };
@@ -20,8 +21,9 @@
 
 /* Begin PBXFileReference section */
 		94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaregiverViewController.swift; sourceTree = "<group>"; };
-		94AC66B71E73E530007DCCA2 /* Caregiver+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Caregiver+CoreDataClass.swift"; path = "../Caregiver+CoreDataClass.swift"; sourceTree = "<group>"; };
+		94AC66B71E73E530007DCCA2 /* Caregiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Caregiver.swift; path = ../Caregiver.swift; sourceTree = "<group>"; };
 		94AC66B81E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Caregiver+CoreDataProperties.swift"; path = "../Caregiver+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		94AC66BB1E73EC34007DCCA2 /* caregiverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caregiverTableViewCell.swift; sourceTree = "<group>"; };
 		94B1242E1E739D150034CEFC /* SWHacks17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWHacks17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B124311E739D150034CEFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94B124331E739D150034CEFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,11 +64,12 @@
 		94B124301E739D150034CEFC /* SWHacks17 */ = {
 			isa = PBXGroup;
 			children = (
-				94AC66B71E73E530007DCCA2 /* Caregiver+CoreDataClass.swift */,
+				94AC66B71E73E530007DCCA2 /* Caregiver.swift */,
 				94AC66B81E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift */,
 				94B124311E739D150034CEFC /* AppDelegate.swift */,
 				94B124331E739D150034CEFC /* ViewController.swift */,
 				94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */,
+				94AC66BB1E73EC34007DCCA2 /* caregiverTableViewCell.swift */,
 				94B124351E739D160034CEFC /* Main.storyboard */,
 				94B1243B1E739D160034CEFC /* Assets.xcassets */,
 				94B1243D1E739D160034CEFC /* LaunchScreen.storyboard */,
@@ -149,8 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94AC66B91E73E530007DCCA2 /* Caregiver+CoreDataClass.swift in Sources */,
+				94AC66B91E73E530007DCCA2 /* Caregiver.swift in Sources */,
 				94B124341E739D150034CEFC /* ViewController.swift in Sources */,
+				94AC66BC1E73EC34007DCCA2 /* caregiverTableViewCell.swift in Sources */,
 				94B1243A1E739D160034CEFC /* SWHacks17.xcdatamodeld in Sources */,
 				94B124321E739D150034CEFC /* AppDelegate.swift in Sources */,
 				94AC66BA1E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift in Sources */,

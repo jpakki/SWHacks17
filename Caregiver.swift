@@ -11,5 +11,7 @@ import CoreData
 
 
 public class Caregiver: NSManagedObject {
-
+    @NSManaged public var name: String?
+    @NSManaged public var photo: NSData?
+    @NSManaged public var phoneNumber: String?
 }

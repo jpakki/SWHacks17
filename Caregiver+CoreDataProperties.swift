@@ -16,8 +16,4 @@ extension Caregiver {
         return NSFetchRequest<Caregiver>(entityName: "Caregiver");
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var photo: NSData?
-    @NSManaged public var phoneNumber: String?
-
 }
