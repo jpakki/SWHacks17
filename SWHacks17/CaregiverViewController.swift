@@ -8,8 +8,10 @@
 
 import UIKit
 
-class CaregiverViewController: UIViewController {
+class CaregiverViewController: UIViewController, UITableViewDelegate{
 
+    @IBOutlet weak var caregiverTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +21,11 @@ class CaregiverViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func loadTable(_ sender: AnyObject) {
+        
+        caregiverTable.reloadData()
     }
     
 
