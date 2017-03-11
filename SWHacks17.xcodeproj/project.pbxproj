@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A88DE681E73FCE700F1BC06 /* RegionDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88DE671E73FCE700F1BC06 /* RegionDelegateProtocol.swift */; };
+		1A88DE6A1E73FCED00F1BC06 /* RegionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88DE691E73FCED00F1BC06 /* RegionProtocol.swift */; };
+		1A88DE701E73FD6300F1BC06 /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1A88DE6F1E73FD6300F1BC06 /* America.gpx */; };
+		1A88DE721E73FE2300F1BC06 /* ViewMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88DE711E73FE2300F1BC06 /* ViewMap.swift */; };
 		94AC66B01E73D272007DCCA2 /* CaregiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */; };
 		94AC66B91E73E530007DCCA2 /* Caregiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66B71E73E530007DCCA2 /* Caregiver.swift */; };
 		94AC66BA1E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66B81E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A88DE671E73FCE700F1BC06 /* RegionDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionDelegateProtocol.swift; path = "../../../Downloads/GeoTargeting-demo-master/GeoTargeting/RegionDelegateProtocol.swift"; sourceTree = "<group>"; };
+		1A88DE691E73FCED00F1BC06 /* RegionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionProtocol.swift; path = "../../../Downloads/GeoTargeting-demo-master/GeoTargeting/RegionProtocol.swift"; sourceTree = "<group>"; };
+		1A88DE6F1E73FD6300F1BC06 /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = America.gpx; path = "../../../Downloads/GeoTargeting-demo-master/GeoTargeting/America.gpx"; sourceTree = "<group>"; };
+		1A88DE711E73FE2300F1BC06 /* ViewMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMap.swift; sourceTree = "<group>"; };
 		94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaregiverViewController.swift; sourceTree = "<group>"; };
 		94AC66B71E73E530007DCCA2 /* Caregiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Caregiver.swift; path = ../Caregiver.swift; sourceTree = "<group>"; };
 		94AC66B81E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Caregiver+CoreDataProperties.swift"; path = "../Caregiver+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -48,6 +56,7 @@
 		94B124251E739D150034CEFC = {
 			isa = PBXGroup;
 			children = (
+				1A88DE711E73FE2300F1BC06 /* ViewMap.swift */,
 				94B124301E739D150034CEFC /* SWHacks17 */,
 				94B1242F1E739D150034CEFC /* Products */,
 			);
@@ -67,10 +76,13 @@
 				94AC66B71E73E530007DCCA2 /* Caregiver.swift */,
 				94AC66B81E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift */,
 				94B124311E739D150034CEFC /* AppDelegate.swift */,
+				1A88DE691E73FCED00F1BC06 /* RegionProtocol.swift */,
 				94B124331E739D150034CEFC /* ViewController.swift */,
+				1A88DE671E73FCE700F1BC06 /* RegionDelegateProtocol.swift */,
 				94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */,
 				94AC66BB1E73EC34007DCCA2 /* caregiverTableViewCell.swift */,
 				94B124351E739D160034CEFC /* Main.storyboard */,
+				1A88DE6F1E73FD6300F1BC06 /* America.gpx */,
 				94B1243B1E739D160034CEFC /* Assets.xcassets */,
 				94B1243D1E739D160034CEFC /* LaunchScreen.storyboard */,
 				94B124401E739D160034CEFC /* Info.plist */,
@@ -141,6 +153,7 @@
 			files = (
 				94B1243F1E739D160034CEFC /* LaunchScreen.storyboard in Resources */,
 				94B1243C1E739D160034CEFC /* Assets.xcassets in Resources */,
+				1A88DE701E73FD6300F1BC06 /* America.gpx in Resources */,
 				94B124371E739D160034CEFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A88DE681E73FCE700F1BC06 /* RegionDelegateProtocol.swift in Sources */,
 				94AC66B91E73E530007DCCA2 /* Caregiver.swift in Sources */,
+				1A88DE6A1E73FCED00F1BC06 /* RegionProtocol.swift in Sources */,
+				1A88DE721E73FE2300F1BC06 /* ViewMap.swift in Sources */,
 				94B124341E739D150034CEFC /* ViewController.swift in Sources */,
 				94AC66BC1E73EC34007DCCA2 /* caregiverTableViewCell.swift in Sources */,
 				94B1243A1E739D160034CEFC /* SWHacks17.xcdatamodeld in Sources */,
