@@ -29,7 +29,8 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         mapView.delegate = self
         mapView.showsUserLocation = true
         mapView.userTrackingMode = .follow
-        
+        mapView.mapType = MKMapType.hybrid
+
         // setup test data
         setupData()
     }
@@ -57,8 +58,8 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             
             // region data
             let title = "Lorrenzillo's"
-            let coordinate = CLLocationCoordinate2DMake(37.703026, -121.759735)
-            let regionRadius = 300.0
+            let coordinate = CLLocationCoordinate2DMake(33.417815, -111.934374)
+            let regionRadius = 100.0
             
             // setup region
             let region = CLCircularRegion(center: CLLocationCoordinate2D(latitude: coordinate.latitude,
@@ -71,6 +72,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             restaurantAnnotation.title = "\(title)";
             mapView.addAnnotation(restaurantAnnotation)
             
+            
             // setup circle
             let circle = MKCircle(center: coordinate, radius: regionRadius)
             mapView.add(circle)
@@ -80,12 +82,14 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         }
     }
     
+    
     // MARK: - MKMapViewDelegate
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let circleRenderer = MKCircleRenderer(overlay: overlay)
-        circleRenderer.strokeColor = UIColor.red
         circleRenderer.lineWidth = 1.0
+        circleRenderer.strokeColor = .purple
+        circleRenderer.fillColor = UIColor.purple.withAlphaComponent(0.4)
         return circleRenderer
     }
     
