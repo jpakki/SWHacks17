@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94AC66B01E73D272007DCCA2 /* CaregiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */; };
 		94B124321E739D150034CEFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B124311E739D150034CEFC /* AppDelegate.swift */; };
 		94B124341E739D150034CEFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B124331E739D150034CEFC /* ViewController.swift */; };
 		94B124371E739D160034CEFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B124351E739D160034CEFC /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaregiverViewController.swift; sourceTree = "<group>"; };
 		94B1242E1E739D150034CEFC /* SWHacks17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWHacks17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B124311E739D150034CEFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94B124331E739D150034CEFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				94B124311E739D150034CEFC /* AppDelegate.swift */,
 				94B124331E739D150034CEFC /* ViewController.swift */,
+				94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */,
 				94B124351E739D160034CEFC /* Main.storyboard */,
 				94B1243B1E739D160034CEFC /* Assets.xcassets */,
 				94B1243D1E739D160034CEFC /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				94B124341E739D150034CEFC /* ViewController.swift in Sources */,
 				94B1243A1E739D160034CEFC /* SWHacks17.xcdatamodeld in Sources */,
 				94B124321E739D150034CEFC /* AppDelegate.swift in Sources */,
+				94AC66B01E73D272007DCCA2 /* CaregiverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
