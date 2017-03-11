@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					94B1242D1E739D150034CEFC = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 325SZU7ZNX;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -262,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 325SZU7ZNX;
 				INFOPLIST_FILE = SWHacks17/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = asu.SWHacks17;
@@ -274,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 325SZU7ZNX;
 				INFOPLIST_FILE = SWHacks17/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = asu.SWHacks17;
@@ -301,6 +304,7 @@
 				94B124451E739D160034CEFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
