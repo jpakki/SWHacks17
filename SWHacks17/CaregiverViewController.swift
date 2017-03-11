@@ -19,8 +19,8 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func fetchRecord() -> Int {
         // Create a new fetch request using the LogItem entity
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Place")
-        var x   = 0
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Caregiver")
+        var x = 0
         // Execute the fetch request, and cast the results to an array of LogItem objects
         fetchResults = ((try? CaregiverDataContext.fetch(fetchRequest)) as? [Caregiver])!
         
@@ -35,14 +35,16 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
 
-    
-    
-    
-    
+
+    @IBAction func loadTable(_ sender: AnyObject) {
+        
+        caregiverTable.reloadData()
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.\
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,12 +52,7 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func loadTable(_ sender: AnyObject) {
-        
-        caregiverTable.reloadData()
-    }
     
-    //number of rows in tableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fetchRecord()
     }
@@ -63,10 +60,10 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
     //layout of cell
     func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath) ->UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "caregiverCell", for: indexPath) as!caregiverTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cgCell", for: indexPath) as! caregiverTableViewCell
         cell.layer.borderWidth = 0.2
         cell.caregiverName.text = fetchResults[indexPath.row].name
-        cell.caregiverPhone.text = fetchResults[indexPath.row].phoneNumber
+        
         
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Caregiver")
@@ -91,13 +88,82 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
         
         return cell
     }
+    
+    //cell deletion
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        let caregiverEntity = "Caregiver"
+        let caregiver = fetchResults[indexPath.row]
+        
+        if editingStyle == .delete {
+            print("Deleted")
+            CaregiverDataContext.delete(caregiver)
+            self.caregiverTable.deleteRows(at: [indexPath], with: .automatic)
+            
+            do {
+                try CaregiverDataContext.save()
+            }
+            catch let error as NSError {
+                print("Error While Deleting")
+            }
+        }
+        caregiverTable.reloadData()
+    }
+
+//    @IBAction func loadTable(_ sender: AnyObject) {
+//
+//        caregiverTable.reloadData()
+//    }
+//    
+//    //number of rows in tableView
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return fetchRecord()
+//    }
+//    
+//    //layout of cell
+//    func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath) ->UITableViewCell {
+//        
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cgCell", for: indexPath) as! caregiverTableViewCell
+//        cell.caregiverName.text = fetchResults[indexPath.row].name
+//        cell.caregiverPhone.text = fetchResults[indexPath.row].phoneNumber
+//        
+//        
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Caregiver")
+//        
+//        
+//        if  let fetchResults = (try? CaregiverDataContext.fetch(fetchRequest)) as? [Caregiver]
+//        {
+//            
+//            let x = fetchResults.count
+//            
+//            
+//            print(x)
+//            if x != 0 {
+//                let l = fetchResults[indexPath.row]
+//                let picture = UIImage(data: l.photo!  as Data)
+//                cell.caregiverImage.image = picture
+//                
+//            }
+//            
+//        }
+//        
+//        
+//        return cell
+//    }
 
 
     //SEGUES
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "addCaregiver")
+        {
+            
+        }
         
-        
+    }
+    
+    @IBAction func returned(segue: UIStoryboardSegue) {
+        caregiverTable.reloadData()
     }
     /*
     // MARK: - Navigation
