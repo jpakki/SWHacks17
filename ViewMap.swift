@@ -55,7 +55,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         }
             // authorization were denied
         else if CLLocationManager.authorizationStatus() == .denied {
-            showAlert("Location services were previously denied. Please enable location services for this app in Settings.")
+            //showAlert("Location services were previously denied. Please enable location services for this app in Settings.")
         }
             // we do have authorization
         else if CLLocationManager.authorizationStatus() == .authorizedAlways {
@@ -131,7 +131,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 //    }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        showAlert("exit \(region.identifier) WHOA UR LEAVING! U LOST!!! AHHHHHH lol")
+        showAlert()
         monitoredRegions.removeValue(forKey: region.identifier)
     }
     
@@ -176,7 +176,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         }
     }
     
-    func showAlert(_ title: String) { 
+    func showAlert() {
 //        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
 //        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
 //            alert.dismiss(animated: true, completion: nil)
@@ -186,18 +186,24 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 //        self.messageButton.isHidden = false
         
         
-        let alertController = UIAlertController(title: "Error", message: "", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Error", message: "Are you lost?", preferredStyle: .alert)
         
         // create an OK action
-        let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+        let YESAction = UIAlertAction(title: "YES", style: .default) { (action) in
             // handle response here.
+            self.sendTextMessageButtonTapped()
+
         }
+        let NOAction = UIAlertAction(title: "NO", style: .default) { (action) in
+        }
+        
         // add the OK action to the alert controller
-        alertController.addAction(OKAction)
+        alertController.addAction(YESAction)
+        alertController.addAction(NOAction)
         
         self.present(alertController, animated: true) {
             // optional code for what happens after the alert controller has finished presenting
-            self.sendTextMessageButtonTapped()
+            //self.sendTextMessageButtonTapped()
         }
     }
     
