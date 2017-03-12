@@ -63,7 +63,7 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "cgCell", for: indexPath) as! caregiverTableViewCell
         cell.layer.borderWidth = 0.2
         cell.caregiverName.text = fetchResults[indexPath.row].name
-        
+        cell.caregiverPhone.text = fetchResults[indexPath.row].phoneNumber
         
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Caregiver")
@@ -79,8 +79,10 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
             if x != 0 {
                 let l = fetchResults[indexPath.row]
                 let picture = UIImage(data: l.photo!  as Data)
+                cell.caregiverImage.layer.borderColor = UIColor.black.cgColor
+                cell.caregiverImage.layer.cornerRadius = 45
+                cell.caregiverImage.clipsToBounds = true
                 cell.caregiverImage.image = picture
-                
             }
             
         }

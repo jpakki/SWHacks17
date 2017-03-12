@@ -15,6 +15,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+            let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+            backgroundImage.image = UIImage(named: "ughpls")
+            self.view.insertSubview(backgroundImage, at: 0)
+            
+
+        
+        careGiversButton.layer.cornerRadius = 30
+        careGiversButton.layer.borderWidth = 2
+        careGiversButton.layer.borderColor = UIColor.black.cgColor
+        geofenceButton.layer.cornerRadius = 30
+        geofenceButton.layer.borderWidth = 2
+        geofenceButton.layer.borderColor = UIColor.black.cgColor
+        patientinfoButton.layer.cornerRadius = 30
+        patientinfoButton.layer.borderWidth = 2
+        patientinfoButton.layer.borderColor = UIColor.black.cgColor
     }
 
     override func didReceiveMemoryWarning() {
