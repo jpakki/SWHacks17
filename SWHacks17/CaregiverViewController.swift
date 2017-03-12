@@ -110,46 +110,6 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
         caregiverTable.reloadData()
     }
 
-//    @IBAction func loadTable(_ sender: AnyObject) {
-//
-//        caregiverTable.reloadData()
-//    }
-//    
-//    //number of rows in tableView
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return fetchRecord()
-//    }
-//    
-//    //layout of cell
-//    func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath) ->UITableViewCell {
-//        
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cgCell", for: indexPath) as! caregiverTableViewCell
-//        cell.caregiverName.text = fetchResults[indexPath.row].name
-//        cell.caregiverPhone.text = fetchResults[indexPath.row].phoneNumber
-//        
-//        
-//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Caregiver")
-//        
-//        
-//        if  let fetchResults = (try? CaregiverDataContext.fetch(fetchRequest)) as? [Caregiver]
-//        {
-//            
-//            let x = fetchResults.count
-//            
-//            
-//            print(x)
-//            if x != 0 {
-//                let l = fetchResults[indexPath.row]
-//                let picture = UIImage(data: l.photo!  as Data)
-//                cell.caregiverImage.image = picture
-//                
-//            }
-//            
-//        }
-//        
-//        
-//        return cell
-//    }
 
 
     //SEGUES

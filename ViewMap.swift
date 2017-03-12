@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import CoreData
 
 class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
@@ -16,6 +17,11 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     var monitoredRegions: Dictionary<String, Date> = [:]
+    
+    let viewContext: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
+    
+    var fetchResults = [User]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +40,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         // setup test data
         setupData()
     }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -56,15 +63,33 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         // check if can monitor regions
         if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
             
+           
+            
+            
+//            if  try viewContext.fetch(request!) as! [User] {
+//                
+//            }
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+            var x = 0
+            // Execute the fetch request, and cast the results to an array of LogItem objects
+            fetchResults = ((try? viewContext.fetch(fetchRequest)) as? [User])!
+            
+            
+            x = fetchResults.count
+            print(x)
+            
+            let result = fetchResults[0].name
+            print(result!)
             // region data
             let title = "Home"
              //let coordinate = CLLocationCoordinate2DMake(33.417815, -111.934374)
-            let coordinate = CLLocationCoordinate2DMake(37.703026, -121.759735)
-            let regionRadius = 100.0
+            let coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(fetchResults[0].lat), CLLocationDegrees(fetchResults[0].long))
+            let regionRadius = fetchResults[0].radius
             
             // setup region
             let region = CLCircularRegion(center: CLLocationCoordinate2D(latitude: coordinate.latitude,
-                                                                         longitude: coordinate.longitude), radius: regionRadius, identifier: title)
+                                                                         longitude: coordinate.longitude), radius: CLLocationDistance(regionRadius), identifier: title)
             locationManager.startMonitoring(for: region)
             
             // setup annotation
@@ -75,7 +100,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             
             
             // setup circle
-            let circle = MKCircle(center: coordinate, radius: regionRadius)
+            let circle = MKCircle(center: coordinate, radius: CLLocationDistance(regionRadius))
             mapView.add(circle)
         }
         else {
@@ -102,7 +127,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 //    }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        showAlert("exit \(region.identifier) WHOA UR LEAVING! U LOST!!!")
+        showAlert("exit \(region.identifier) WHOA UR LEAVING! U LOST!!! AHHHHHH lol")
         monitoredRegions.removeValue(forKey: region.identifier)
     }
     
