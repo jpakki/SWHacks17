@@ -13,6 +13,7 @@
 		1A7E72711E7548A800C3993E /* coolone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E72701E7548A800C3993E /* coolone.png */; };
 		1A7E72731E75490700C3993E /* coolsecond.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E72721E75490700C3993E /* coolsecond.png */; };
 		1A7E72751E75498A00C3993E /* ew.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E72741E75498A00C3993E /* ew.png */; };
+		1A7E72771E754F2300C3993E /* Tempe (3).gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E72761E754F2300C3993E /* Tempe (3).gpx */; };
 		1A88DE721E73FE2300F1BC06 /* ViewMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88DE711E73FE2300F1BC06 /* ViewMap.swift */; };
 		9435D4321E74A9090002BBA2 /* RegionDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */; };
 		9435D4341E74A9130002BBA2 /* RegionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435D4331E74A9130002BBA2 /* RegionProtocol.swift */; };
@@ -21,7 +22,6 @@
 		9450C7351E74D191008F6B5F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450C7331E74D191008F6B5F /* User.swift */; };
 		9450C7361E74D191008F6B5F /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450C7341E74D191008F6B5F /* User+CoreDataProperties.swift */; };
 		94AB9AB21E75141D0000E07C /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AB9AB11E75141D0000E07C /* MessageComposer.swift */; };
-		94AB9AB41E7514260000E07C /* Tempe.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 94AB9AB31E7514260000E07C /* Tempe.gpx */; };
 		94AC66B01E73D272007DCCA2 /* CaregiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */; };
 		94AC66B91E73E530007DCCA2 /* Caregiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66B71E73E530007DCCA2 /* Caregiver.swift */; };
 		94AC66BA1E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC66B81E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift */; };
@@ -42,6 +42,7 @@
 		1A7E72701E7548A800C3993E /* coolone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coolone.png; path = ../../../Downloads/coolone.png; sourceTree = "<group>"; };
 		1A7E72721E75490700C3993E /* coolsecond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coolsecond.png; path = ../../../Downloads/coolsecond.png; sourceTree = "<group>"; };
 		1A7E72741E75498A00C3993E /* ew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ew.png; path = ../../../Downloads/ew.png; sourceTree = "<group>"; };
+		1A7E72761E754F2300C3993E /* Tempe (3).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Tempe (3).gpx"; path = "../../../Downloads/Tempe (3).gpx"; sourceTree = "<group>"; };
 		1A88DE711E73FE2300F1BC06 /* ViewMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewMap.swift; path = ../ViewMap.swift; sourceTree = "<group>"; };
 		9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionDelegateProtocol.swift; path = ../../../Downloads/RegionDelegateProtocol.swift; sourceTree = "<group>"; };
 		9435D4331E74A9130002BBA2 /* RegionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionProtocol.swift; path = ../../../Downloads/RegionProtocol.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		9450C7331E74D191008F6B5F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
 		9450C7341E74D191008F6B5F /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "../User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		94AB9AB11E75141D0000E07C /* MessageComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageComposer.swift; path = ../../../Downloads/MessageComposer.swift; sourceTree = "<group>"; };
-		94AB9AB31E7514260000E07C /* Tempe.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Tempe.gpx; path = ../../../Downloads/Tempe.gpx; sourceTree = "<group>"; };
 		94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaregiverViewController.swift; sourceTree = "<group>"; };
 		94AC66B71E73E530007DCCA2 /* Caregiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Caregiver.swift; path = ../Caregiver.swift; sourceTree = "<group>"; };
 		94AC66B81E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Caregiver+CoreDataProperties.swift"; path = "../Caregiver+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 				9435D4331E74A9130002BBA2 /* RegionProtocol.swift */,
 				9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */,
 				94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */,
-				94AB9AB31E7514260000E07C /* Tempe.gpx */,
+				1A7E72761E754F2300C3993E /* Tempe (3).gpx */,
 				9435D4371E74AAEF0002BBA2 /* America.gpx */,
 				1A7E726E1E7547BF00C3993E /* secondswag.png */,
 				94AC66BB1E73EC34007DCCA2 /* caregiverTableViewCell.swift */,
@@ -192,11 +192,11 @@
 				1A7E72751E75498A00C3993E /* ew.png in Resources */,
 				1A7E72731E75490700C3993E /* coolsecond.png in Resources */,
 				94B1243F1E739D160034CEFC /* LaunchScreen.storyboard in Resources */,
-				94AB9AB41E7514260000E07C /* Tempe.gpx in Resources */,
 				94B1243C1E739D160034CEFC /* Assets.xcassets in Resources */,
 				9435D4381E74AAEF0002BBA2 /* America.gpx in Resources */,
 				94B124371E739D160034CEFC /* Main.storyboard in Resources */,
 				1A7E72711E7548A800C3993E /* coolone.png in Resources */,
+				1A7E72771E754F2300C3993E /* Tempe (3).gpx in Resources */,
 				1A7E726F1E7547BF00C3993E /* secondswag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

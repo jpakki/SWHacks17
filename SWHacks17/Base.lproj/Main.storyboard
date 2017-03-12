@@ -418,20 +418,23 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCW-VM-rGD">
-                                <rect key="frame" x="37" y="595" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Message"/>
-                                <connections>
-                                    <action selector="messageButtonAction:" destination="VLb-dQ-5Pt" eventType="touchUpInside" id="tea-mf-5QL"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3f-O5-RnP">
-                                <rect key="frame" x="224" y="595" width="62" height="30"/>
+                                <rect key="frame" x="182" y="576" width="193" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.8862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Direction"/>
                                 <connections>
                                     <action selector="directionButtonAction:" destination="VLb-dQ-5Pt" eventType="touchUpInside" id="GBk-18-KeK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCW-VM-rGD">
+                                <rect key="frame" x="0.0" y="576" width="183" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.8862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Message"/>
+                                <connections>
+                                    <action selector="messageButtonAction:" destination="VLb-dQ-5Pt" eventType="touchUpInside" id="tea-mf-5QL"/>
                                 </connections>
                             </button>
                         </subviews>
