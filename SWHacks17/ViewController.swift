@@ -10,7 +10,15 @@ import UIKit
 import FontAwesome_swift
 class ViewController: UIViewController {
     
-    @IBOutlet weak var caregiverButton: UIButton!
+    
+    @IBOutlet weak var careGiversButton: UIButton!
+    @IBOutlet weak var geofenceButton: UIButton!
+    
+    
+    
+    @IBOutlet weak var patientinfoButton: UIButton!
+    
+    
     var gradientLayer: CAGradientLayer!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +40,8 @@ class ViewController: UIViewController {
         patientinfoButton.layer.cornerRadius = 30
         patientinfoButton.layer.borderWidth = 2
         patientinfoButton.layer.borderColor = UIColor.black.cgColor
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
