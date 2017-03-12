@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A88DE721E73FE2300F1BC06 /* ViewMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88DE711E73FE2300F1BC06 /* ViewMap.swift */; };
 		1A88DEBC1E750CF400F1BC06 /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88DEBB1E750CF400F1BC06 /* MessageComposer.swift */; };
+		1A88DEBE1E75107000F1BC06 /* Tempe (2).gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1A88DEBD1E75107000F1BC06 /* Tempe (2).gpx */; };
 		9435D4321E74A9090002BBA2 /* RegionDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */; };
 		9435D4341E74A9130002BBA2 /* RegionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435D4331E74A9130002BBA2 /* RegionProtocol.swift */; };
 		9435D4381E74AAEF0002BBA2 /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9435D4371E74AAEF0002BBA2 /* America.gpx */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		1A88DE711E73FE2300F1BC06 /* ViewMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewMap.swift; path = ../ViewMap.swift; sourceTree = "<group>"; };
 		1A88DEBB1E750CF400F1BC06 /* MessageComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageComposer.swift; path = ../../../Desktop/testSMS/testSMS/MessageComposer.swift; sourceTree = "<group>"; };
+		1A88DEBD1E75107000F1BC06 /* Tempe (2).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Tempe (2).gpx"; path = "../../../Downloads/Tempe (2).gpx"; sourceTree = "<group>"; };
 		9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionDelegateProtocol.swift; path = ../../../Downloads/RegionDelegateProtocol.swift; sourceTree = "<group>"; };
 		9435D4331E74A9130002BBA2 /* RegionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionProtocol.swift; path = ../../../Downloads/RegionProtocol.swift; sourceTree = "<group>"; };
 		9435D4371E74AAEF0002BBA2 /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = America.gpx; path = ../../../Downloads/America.gpx; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				1A88DEBB1E750CF400F1BC06 /* MessageComposer.swift */,
 				94B124311E739D150034CEFC /* AppDelegate.swift */,
 				1A88DE711E73FE2300F1BC06 /* ViewMap.swift */,
+				1A88DEBD1E75107000F1BC06 /* Tempe (2).gpx */,
 				94B124331E739D150034CEFC /* ViewController.swift */,
 				9435D4331E74A9130002BBA2 /* RegionProtocol.swift */,
 				9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */,
@@ -166,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A88DEBE1E75107000F1BC06 /* Tempe (2).gpx in Resources */,
 				94B1243F1E739D160034CEFC /* LaunchScreen.storyboard in Resources */,
 				94B1243C1E739D160034CEFC /* Assets.xcassets in Resources */,
 				9435D4381E74AAEF0002BBA2 /* America.gpx in Resources */,
