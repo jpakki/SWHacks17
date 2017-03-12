@@ -21,7 +21,6 @@ class addCaregiverViewController: UIViewController, UIImagePickerControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profilePic.layer.cornerRadius = 8.0
         picker.delegate = self
         // Do any additional setup after loading the view.
     }
