@@ -10,12 +10,16 @@ import UIKit
 import MapKit
 import CoreLocation
 import CoreData
+import Contacts
 
 class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var messageButton: UIButton!
-    
+    let address = "301 E Orange St, Tempe, AZ 85287"
+    var coords: CLLocationCoordinate2D?
+
+
     let locationManager = CLLocationManager()
     var monitoredRegions: Dictionary<String, Date> = [:]
     
@@ -176,6 +180,10 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         }
     }
     
+    func yesAlertTriggered(){
+        showLostAlert()
+    }
+    
     func showAlert() {
 //        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
 //        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
@@ -186,13 +194,12 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 //        self.messageButton.isHidden = false
         
         
-        let alertController = UIAlertController(title: "Error", message: "Are you lost?", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Lost", message: "Are you lost?", preferredStyle: .alert)
         
         // create an OK action
         let YESAction = UIAlertAction(title: "YES", style: .default) { (action) in
             // handle response here.
-            self.sendTextMessageButtonTapped()
-
+            self.yesAlertTriggered()
         }
         let NOAction = UIAlertAction(title: "NO", style: .default) { (action) in
         }
@@ -207,6 +214,72 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         }
     }
     
+    func showLostAlert() {
+        //        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        //        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
+        //            alert.dismiss(animated: true, completion: nil)
+        //        }))
+        //        self.present(alert, animated: true, completion: nil)
+        //
+        //        self.messageButton.isHidden = false
+        
+        
+        let alertController = UIAlertController(title: "Here's some help!", message: "Get some help!", preferredStyle: .alert)
+        
+        // create an OK action
+        let YESAction = UIAlertAction(title: "Message Caregiver", style: .default) { (action) in
+            // handle response here.
+            self.sendTextMessageButtonTapped()
+        }
+        let NOAction = UIAlertAction(title: "GPS Directions", style: .default) { (action) in
+            
+        }
+        
+        // add the OK action to the alert controller
+        alertController.addAction(YESAction)
+        alertController.addAction(NOAction)
+        
+        self.present(alertController, animated: true) {
+            // optional code for what happens after the alert controller has finished presenting
+            //self.sendTextMessageButtonTapped()
+        }
+    }
     
+    @IBAction func messageButtonAction(_ sender: Any) {
+        self.sendTextMessageButtonTapped()
+    }
+    
+    @IBAction func directionButtonAction(_ sender: Any) {
+        let geoCoder = CLGeocoder()
+        
+        geoCoder.geocodeAddressString(address) { placemarks, error in
+            
+                if error != nil {
+                    print("Geocode failed with error: \(error!.localizedDescription)")
+                } else if placemarks!.count > 0 {
+                    let placemark = placemarks![0]
+                    let location = placemark.location
+                    self.coords = location!.coordinate
+                    
+                    self.showMap()
+                    
+                }
+        }
+    }
+    
+    func showMap() {
+        let addressDict =
+            [CNPostalAddressStreetKey: address]
+        
+        let place = MKPlacemark(coordinate: coords!,
+                                addressDictionary: addressDict)
+        
+        let mapItem = MKMapItem(placemark: place)
+        
+        let options = [MKLaunchOptionsDirectionsModeKey:
+            MKLaunchOptionsDirectionsModeDriving]
+        
+        mapItem.openInMaps(launchOptions: options)
+    }
 }
 
