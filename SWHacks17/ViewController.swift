@@ -10,10 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var careGiversButton: UIButton!
+    @IBOutlet weak var geofenceButton: UIButton!
+    @IBOutlet weak var patientinfoButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        careGiversButton.layer.cornerRadius = 20
+        careGiversButton.layer.borderWidth = 1
+        careGiversButton.layer.borderColor = UIColor.black.cgColor
+        geofenceButton.layer.cornerRadius = 20
+        geofenceButton.layer.borderWidth = 1
+        geofenceButton.layer.borderColor = UIColor.black.cgColor
+        patientinfoButton.layer.cornerRadius = 20
+        patientinfoButton.layer.borderWidth = 1
+        patientinfoButton.layer.borderColor = UIColor.black.cgColor
     }
 
     override func didReceiveMemoryWarning() {
