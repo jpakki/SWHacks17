@@ -27,6 +27,7 @@
 		94B1243A1E739D160034CEFC /* SWHacks17.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94B124381E739D160034CEFC /* SWHacks17.xcdatamodeld */; };
 		94B1243C1E739D160034CEFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B1243B1E739D160034CEFC /* Assets.xcassets */; };
 		94B1243F1E739D160034CEFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B1243D1E739D160034CEFC /* LaunchScreen.storyboard */; };
+		94B88DB31E75536D00F82DCB /* Tempe-3.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 94B88DB21E75536D00F82DCB /* Tempe-3.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +37,6 @@
 		1A7E72701E7548A800C3993E /* coolone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coolone.png; path = ../../../Downloads/coolone.png; sourceTree = "<group>"; };
 		1A7E72721E75490700C3993E /* coolsecond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coolsecond.png; path = ../../../Downloads/coolsecond.png; sourceTree = "<group>"; };
 		1A7E72741E75498A00C3993E /* ew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ew.png; path = ../../../Downloads/ew.png; sourceTree = "<group>"; };
-		1A7E72761E754F2300C3993E /* Tempe (3).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Tempe (3).gpx"; path = "../../../Downloads/Tempe (3).gpx"; sourceTree = "<group>"; };
 		1A88DE711E73FE2300F1BC06 /* ViewMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewMap.swift; path = ../ViewMap.swift; sourceTree = "<group>"; };
 		58183A511393D52F14C52800 /* Pods-SWHacks17.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWHacks17.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWHacks17/Pods-SWHacks17.release.xcconfig"; sourceTree = "<group>"; };
 		8ACFF9968C955254E7DF6693 /* Pods_SWHacks17.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWHacks17.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +60,7 @@
 		94B1243B1E739D160034CEFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94B1243E1E739D160034CEFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94B124401E739D160034CEFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94B88DB21E75536D00F82DCB /* Tempe-3.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Tempe-3.gpx"; path = "../../../Downloads/Tempe-3.gpx"; sourceTree = "<group>"; };
 		AE8683906286FFA4BBC079AA /* Pods-SWHacks17.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWHacks17.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWHacks17/Pods-SWHacks17.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,7 +123,7 @@
 				9435D4331E74A9130002BBA2 /* RegionProtocol.swift */,
 				9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */,
 				94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */,
-				1A7E72761E754F2300C3993E /* Tempe (3).gpx */,
+				94B88DB21E75536D00F82DCB /* Tempe-3.gpx */,
 				9435D4371E74AAEF0002BBA2 /* America.gpx */,
 				1A7E726E1E7547BF00C3993E /* secondswag.png */,
 				94AC66BB1E73EC34007DCCA2 /* caregiverTableViewCell.swift */,
@@ -211,9 +212,7 @@
 				94B1243C1E739D160034CEFC /* Assets.xcassets in Resources */,
 				9435D4381E74AAEF0002BBA2 /* America.gpx in Resources */,
 				94B124371E739D160034CEFC /* Main.storyboard in Resources */,
-				1A7E72711E7548A800C3993E /* coolone.png in Resources */,
-				1A7E72771E754F2300C3993E /* Tempe (3).gpx in Resources */,
-				1A7E726F1E7547BF00C3993E /* secondswag.png in Resources */,
+				94B88DB31E75536D00F82DCB /* Tempe-3.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
