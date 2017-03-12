@@ -277,7 +277,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         let mapItem = MKMapItem(placemark: place)
         
         let options = [MKLaunchOptionsDirectionsModeKey:
-            MKLaunchOptionsDirectionsModeDriving]
+            MKLaunchOptionsDirectionsModeWalking]
         
         mapItem.openInMaps(launchOptions: options)
     }
