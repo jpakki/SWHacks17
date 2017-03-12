@@ -105,7 +105,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             
             // setup circle
             let circle = MKCircle(center: coordinate, radius: CLLocationDistance(regionRadius))
-            mapView.add(circle)
+            mapView.add(circle) 
         }
         else {
             print("System can't track regions")
