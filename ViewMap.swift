@@ -176,7 +176,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         }
     }
     
-    func showAlert(_ title: String) {
+    func showAlert(_ title: String) { 
 //        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
 //        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
 //            alert.dismiss(animated: true, completion: nil)
