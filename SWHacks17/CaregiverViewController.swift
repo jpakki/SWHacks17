@@ -79,8 +79,10 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
             if x != 0 {
                 let l = fetchResults[indexPath.row]
                 let picture = UIImage(data: l.photo!  as Data)
+                cell.caregiverImage.layer.borderColor = UIColor.black.cgColor
+                cell.caregiverImage.layer.cornerRadius = 45
+                cell.caregiverImage.clipsToBounds = true
                 cell.caregiverImage.image = picture
-                
             }
             
         }
