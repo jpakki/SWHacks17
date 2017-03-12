@@ -87,8 +87,8 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             print(result!)
             // region data
             let title = "Home"
-             let coordinate = CLLocationCoordinate2DMake(33.417815, -111.934374)
-            //let coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(fetchResults[0].lat), CLLocationDegrees(fetchResults[0].long))
+             //let coordinate = CLLocationCoordinate2DMake(33.417815, -111.934374)
+            let coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(fetchResults[0].lat), CLLocationDegrees(fetchResults[0].long))
             let regionRadius = fetchResults[0].radius
             
             // setup region
@@ -105,7 +105,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             
             // setup circle
             let circle = MKCircle(center: coordinate, radius: CLLocationDistance(regionRadius))
-            mapView.add(circle) 
+            mapView.add(circle)
         }
         else {
             print("System can't track regions")
@@ -130,10 +130,10 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 //        monitoredRegions[region.identifier] = Date()
 //    }
     
-//    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-//        showAlert("exit \(region.identifier) WHOA UR LEAVING! U LOST!!! AHHHHHH lol")
-//        monitoredRegions.removeValue(forKey: region.identifier)
-//    }
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        showAlert("exit \(region.identifier) WHOA UR LEAVING! U LOST!!! AHHHHHH lol")
+        monitoredRegions.removeValue(forKey: region.identifier)
+    }
     
 //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 //        updateRegionsWithLocation(locations[0])
