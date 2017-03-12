@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A88DE721E73FE2300F1BC06 /* ViewMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88DE711E73FE2300F1BC06 /* ViewMap.swift */; };
+		1A88DEBC1E750CF400F1BC06 /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88DEBB1E750CF400F1BC06 /* MessageComposer.swift */; };
 		9435D4321E74A9090002BBA2 /* RegionDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */; };
 		9435D4341E74A9130002BBA2 /* RegionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435D4331E74A9130002BBA2 /* RegionProtocol.swift */; };
 		9435D4381E74AAEF0002BBA2 /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9435D4371E74AAEF0002BBA2 /* America.gpx */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		1A88DE711E73FE2300F1BC06 /* ViewMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewMap.swift; path = ../ViewMap.swift; sourceTree = "<group>"; };
+		1A88DEBB1E750CF400F1BC06 /* MessageComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageComposer.swift; path = ../../../Desktop/testSMS/testSMS/MessageComposer.swift; sourceTree = "<group>"; };
 		9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionDelegateProtocol.swift; path = ../../../Downloads/RegionDelegateProtocol.swift; sourceTree = "<group>"; };
 		9435D4331E74A9130002BBA2 /* RegionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionProtocol.swift; path = ../../../Downloads/RegionProtocol.swift; sourceTree = "<group>"; };
 		9435D4371E74AAEF0002BBA2 /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = America.gpx; path = ../../../Downloads/America.gpx; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				9450C7251E74C2E1008F6B5F /* AddPatientViewController.swift */,
 				94AC66B71E73E530007DCCA2 /* Caregiver.swift */,
 				94AC66B81E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift */,
+				1A88DEBB1E750CF400F1BC06 /* MessageComposer.swift */,
 				94B124311E739D150034CEFC /* AppDelegate.swift */,
 				1A88DE711E73FE2300F1BC06 /* ViewMap.swift */,
 				94B124331E739D150034CEFC /* ViewController.swift */,
@@ -135,7 +138,7 @@
 				TargetAttributes = {
 					94B1242D1E739D150034CEFC = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 325SZU7ZNX;
+						DevelopmentTeam = LCV2SHMJMY;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -186,6 +189,7 @@
 				94AC66BC1E73EC34007DCCA2 /* caregiverTableViewCell.swift in Sources */,
 				9450C7261E74C2E1008F6B5F /* AddPatientViewController.swift in Sources */,
 				94B1243A1E739D160034CEFC /* SWHacks17.xcdatamodeld in Sources */,
+				1A88DEBC1E750CF400F1BC06 /* MessageComposer.swift in Sources */,
 				94B124321E739D150034CEFC /* AppDelegate.swift in Sources */,
 				9450C7361E74D191008F6B5F /* User+CoreDataProperties.swift in Sources */,
 				94AC66BA1E73E530007DCCA2 /* Caregiver+CoreDataProperties.swift in Sources */,
@@ -311,7 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 325SZU7ZNX;
+				DEVELOPMENT_TEAM = LCV2SHMJMY;
 				INFOPLIST_FILE = SWHacks17/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = asu.SWHacks17;
@@ -324,7 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 325SZU7ZNX;
+				DEVELOPMENT_TEAM = LCV2SHMJMY;
 				INFOPLIST_FILE = SWHacks17/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = asu.SWHacks17;

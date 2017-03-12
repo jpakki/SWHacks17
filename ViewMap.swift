@@ -14,6 +14,7 @@ import CoreData
 class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var messageButton: UIButton!
     
     let locationManager = CLLocationManager()
     var monitoredRegions: Dictionary<String, Date> = [:]
@@ -22,9 +23,12 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var fetchResults = [User]()
 
+    let messageComposer = MessageComposer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //self.messageButton.isHidden = true
         
         // setup locationManager
         locationManager.delegate = self;
@@ -141,7 +145,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 //        
 //        let regionMaxVisiting = 10.0
 //        var regionsToDelete: [String] = []
-//        
+//
 //        for regionIdentifier in monitoredRegions.keys {
 //            if Date().timeIntervalSince(monitoredRegions[regionIdentifier]!) > regionMaxVisiting {
 //                showAlert("Thanks for visiting our restaurant")
@@ -156,6 +160,21 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 //    }
     
     // MARK: - Helpers
+    @IBAction func sendTextMessageButtonTapped(_ sender: UIButton) {
+        if (messageComposer.canSendText()) {
+            // Obtain a configured MFMessageComposeViewController
+            let messageComposeVC = messageComposer.configuredMessageComposeViewController()
+            
+            // Present the configured MFMessageComposeViewController instance
+            // Note that the dismissal of the VC will be handled by the messageComposer instance,
+            // since it implements the appropriate delegate call-back
+            present(messageComposeVC, animated: true, completion: nil)
+        } else {
+            // Let the user know if his/her device isn't able to send text messages
+            let errorAlert = UIAlertView(title: "Cannot Send Text Message", message: "Your device is not able to send text messages.", delegate: self, cancelButtonTitle: "OK")
+            errorAlert.show()
+        }
+    }
     
     func showAlert(_ title: String) {
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
@@ -164,6 +183,10 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         }))
         self.present(alert, animated: true, completion: nil)
         
+        self.messageButton.isHidden = false
+        
     }
+    
+    
 }
 
