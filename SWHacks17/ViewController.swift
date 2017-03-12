@@ -11,8 +11,11 @@ import FontAwesome_swift
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var careGiverIcon: UILabel!
+    @IBOutlet weak var geofenceIcon: UILabel!
     @IBOutlet weak var careGiversButton: UIButton!
     @IBOutlet weak var geofenceButton: UIButton!
+    @IBOutlet weak var patientInfoIcon: UILabel!
     
     
     
@@ -41,6 +44,12 @@ class ViewController: UIViewController {
         patientinfoButton.layer.borderWidth = 2
         patientinfoButton.layer.borderColor = UIColor.black.cgColor
         
+        careGiverIcon.font = UIFont.fontAwesome(ofSize: 30)
+        careGiverIcon.text = String.fontAwesomeIcon(code: "fa-user-md")
+        geofenceIcon.font = UIFont.fontAwesome(ofSize: 30)
+        geofenceIcon.text = String.fontAwesomeIcon(code: "fa-map-pin")
+        patientInfoIcon.font = UIFont.fontAwesome(ofSize: 30)
+        patientInfoIcon.text = String.fontAwesomeIcon(code: "fa-user")
         
     }
 
