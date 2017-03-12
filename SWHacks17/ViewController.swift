@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
+import FontAwesome_swift
 class ViewController: UIViewController {
     
-
+    @IBOutlet weak var caregiverButton: UIButton!
+    var gradientLayer: CAGradientLayer!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,7 +25,8 @@ class ViewController: UIViewController {
     @IBAction func returnedToMain(segue: UIStoryboardSegue) {
         
 }
+    
 
+    
 
 }
-
