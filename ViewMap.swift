@@ -87,8 +87,8 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             print(result!)
             // region data
             let title = "Home"
-             //let coordinate = CLLocationCoordinate2DMake(33.417815, -111.934374)
-            let coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(fetchResults[0].lat), CLLocationDegrees(fetchResults[0].long))
+             let coordinate = CLLocationCoordinate2DMake(33.417815, -111.934374)
+            //let coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(fetchResults[0].lat), CLLocationDegrees(fetchResults[0].long))
             let regionRadius = fetchResults[0].radius
             
             // setup region
@@ -105,7 +105,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             
             // setup circle
             let circle = MKCircle(center: coordinate, radius: CLLocationDistance(regionRadius))
-            mapView.add(circle)
+            mapView.add(circle) 
         }
         else {
             print("System can't track regions")
@@ -130,10 +130,10 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 //        monitoredRegions[region.identifier] = Date()
 //    }
     
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        showAlert("exit \(region.identifier) WHOA UR LEAVING! U LOST!!! AHHHHHH lol")
-        monitoredRegions.removeValue(forKey: region.identifier)
-    }
+//    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+//        showAlert("exit \(region.identifier) WHOA UR LEAVING! U LOST!!! AHHHHHH lol")
+//        monitoredRegions.removeValue(forKey: region.identifier)
+//    }
     
 //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 //        updateRegionsWithLocation(locations[0])
@@ -160,7 +160,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 //    }
     
     // MARK: - Helpers
-    @IBAction func sendTextMessageButtonTapped(_ sender: UIButton) {
+    func sendTextMessageButtonTapped() {
         if (messageComposer.canSendText()) {
             // Obtain a configured MFMessageComposeViewController
             let messageComposeVC = messageComposer.configuredMessageComposeViewController()
@@ -177,14 +177,28 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     }
     
     func showAlert(_ title: String) {
-        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
-            alert.dismiss(animated: true, completion: nil)
-        }))
-        self.present(alert, animated: true, completion: nil)
+//        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
+//            alert.dismiss(animated: true, completion: nil)
+//        }))
+//        self.present(alert, animated: true, completion: nil)
+//        
+//        self.messageButton.isHidden = false
         
-        self.messageButton.isHidden = false
         
+        let alertController = UIAlertController(title: "Error", message: "", preferredStyle: .alert)
+        
+        // create an OK action
+        let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+            // handle response here.
+        }
+        // add the OK action to the alert controller
+        alertController.addAction(OKAction)
+        
+        self.present(alertController, animated: true) {
+            // optional code for what happens after the alert controller has finished presenting
+            self.sendTextMessageButtonTapped()
+        }
     }
     
     

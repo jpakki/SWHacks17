@@ -92,6 +92,7 @@
 				94B124311E739D150034CEFC /* AppDelegate.swift */,
 				94AB9AB11E75141D0000E07C /* MessageComposer.swift */,
 				1A88DE711E73FE2300F1BC06 /* ViewMap.swift */,
+				1A88DEBD1E75107000F1BC06 /* Tempe (2).gpx */,
 				94B124331E739D150034CEFC /* ViewController.swift */,
 				9435D4331E74A9130002BBA2 /* RegionProtocol.swift */,
 				9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */,
@@ -169,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A88DEBE1E75107000F1BC06 /* Tempe (2).gpx in Resources */,
 				94B1243F1E739D160034CEFC /* LaunchScreen.storyboard in Resources */,
 				94AB9AB41E7514260000E07C /* Tempe.gpx in Resources */,
 				94B1243C1E739D160034CEFC /* Assets.xcassets in Resources */,
