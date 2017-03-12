@@ -63,7 +63,7 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "cgCell", for: indexPath) as! caregiverTableViewCell
         cell.layer.borderWidth = 0.2
         cell.caregiverName.text = fetchResults[indexPath.row].name
-        
+        cell.caregiverPhone.text = fetchResults[indexPath.row].phoneNumber
         
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Caregiver")
