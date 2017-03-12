@@ -8,9 +8,11 @@
 
 import UIKit
 import CoreData
+import FontAwesome_swift
 
 class CaregiverViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
+    @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var caregiverTable: UITableView!
     
     let CaregiverDataContext: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
@@ -44,7 +46,7 @@ class CaregiverViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.\
-        
+
     }
 
     override func didReceiveMemoryWarning() {

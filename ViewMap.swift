@@ -1,19 +1,13 @@
-//
-//  ViewController.swift
-//  GeoTargeting
-//
-//  Created by Eugene Trapeznikov on 4/23/16.
-//  Copyright © 2016 Evgenii Trapeznikov. All rights reserved.
-//
-
 import UIKit
 import MapKit
 import CoreLocation
 import CoreData
 import Contacts
+import FontAwesome_swift
 
 class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
+    @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var messageButton: UIButton!
     let address = "301 E Orange St, Tempe, AZ 85287"
@@ -47,6 +41,10 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
         // setup test data
         setupData()
+        
+        let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
+        backButton.setTitleTextAttributes(attributes, for: .normal)
+        backButton.title = String.fontAwesomeIcon(name: .arrowLeft)
     }
     
     
