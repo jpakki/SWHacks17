@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1A7E72651E7543A600C3993E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E72641E7543A600C3993E /* button.png */; };
 		1A7E726D1E7546AD00C3993E /* ughpls.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E726C1E7546AD00C3993E /* ughpls.png */; };
+		1A7E726F1E7547BF00C3993E /* secondswag.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E726E1E7547BF00C3993E /* secondswag.png */; };
+		1A7E72711E7548A800C3993E /* coolone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E72701E7548A800C3993E /* coolone.png */; };
+		1A7E72731E75490700C3993E /* coolsecond.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E72721E75490700C3993E /* coolsecond.png */; };
+		1A7E72751E75498A00C3993E /* ew.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E72741E75498A00C3993E /* ew.png */; };
 		1A88DE721E73FE2300F1BC06 /* ViewMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88DE711E73FE2300F1BC06 /* ViewMap.swift */; };
 		9435D4321E74A9090002BBA2 /* RegionDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */; };
 		9435D4341E74A9130002BBA2 /* RegionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435D4331E74A9130002BBA2 /* RegionProtocol.swift */; };
@@ -34,6 +38,10 @@
 /* Begin PBXFileReference section */
 		1A7E72641E7543A600C3993E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = ../../../Downloads/button.png; sourceTree = "<group>"; };
 		1A7E726C1E7546AD00C3993E /* ughpls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ughpls.png; path = ../../../Downloads/ughpls.png; sourceTree = "<group>"; };
+		1A7E726E1E7547BF00C3993E /* secondswag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secondswag.png; path = ../../../Downloads/secondswag.png; sourceTree = "<group>"; };
+		1A7E72701E7548A800C3993E /* coolone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coolone.png; path = ../../../Downloads/coolone.png; sourceTree = "<group>"; };
+		1A7E72721E75490700C3993E /* coolsecond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coolsecond.png; path = ../../../Downloads/coolsecond.png; sourceTree = "<group>"; };
+		1A7E72741E75498A00C3993E /* ew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ew.png; path = ../../../Downloads/ew.png; sourceTree = "<group>"; };
 		1A88DE711E73FE2300F1BC06 /* ViewMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewMap.swift; path = ../ViewMap.swift; sourceTree = "<group>"; };
 		9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionDelegateProtocol.swift; path = ../../../Downloads/RegionDelegateProtocol.swift; sourceTree = "<group>"; };
 		9435D4331E74A9130002BBA2 /* RegionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionProtocol.swift; path = ../../../Downloads/RegionProtocol.swift; sourceTree = "<group>"; };
@@ -98,12 +106,16 @@
 				1A88DE711E73FE2300F1BC06 /* ViewMap.swift */,
 				94B124331E739D150034CEFC /* ViewController.swift */,
 				1A7E72641E7543A600C3993E /* button.png */,
+				1A7E72701E7548A800C3993E /* coolone.png */,
+				1A7E72741E75498A00C3993E /* ew.png */,
+				1A7E72721E75490700C3993E /* coolsecond.png */,
 				1A7E726C1E7546AD00C3993E /* ughpls.png */,
 				9435D4331E74A9130002BBA2 /* RegionProtocol.swift */,
 				9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */,
 				94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */,
 				94AB9AB31E7514260000E07C /* Tempe.gpx */,
 				9435D4371E74AAEF0002BBA2 /* America.gpx */,
+				1A7E726E1E7547BF00C3993E /* secondswag.png */,
 				94AC66BB1E73EC34007DCCA2 /* caregiverTableViewCell.swift */,
 				94B124351E739D160034CEFC /* Main.storyboard */,
 				94AC66BD1E73F5D1007DCCA2 /* addCaregiverViewController.swift */,
@@ -177,11 +189,15 @@
 			files = (
 				1A7E726D1E7546AD00C3993E /* ughpls.png in Resources */,
 				1A7E72651E7543A600C3993E /* button.png in Resources */,
+				1A7E72751E75498A00C3993E /* ew.png in Resources */,
+				1A7E72731E75490700C3993E /* coolsecond.png in Resources */,
 				94B1243F1E739D160034CEFC /* LaunchScreen.storyboard in Resources */,
 				94AB9AB41E7514260000E07C /* Tempe.gpx in Resources */,
 				94B1243C1E739D160034CEFC /* Assets.xcassets in Resources */,
 				9435D4381E74AAEF0002BBA2 /* America.gpx in Resources */,
 				94B124371E739D160034CEFC /* Main.storyboard in Resources */,
+				1A7E72711E7548A800C3993E /* coolone.png in Resources */,
+				1A7E726F1E7547BF00C3993E /* secondswag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
