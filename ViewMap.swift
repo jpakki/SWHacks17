@@ -57,8 +57,9 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
             
             // region data
-            let title = "Lorrenzillo's"
-            let coordinate = CLLocationCoordinate2DMake(33.417815, -111.934374)
+            let title = "Home"
+             //let coordinate = CLLocationCoordinate2DMake(33.417815, -111.934374)
+            let coordinate = CLLocationCoordinate2DMake(37.703026, -121.759735)
             let regionRadius = 100.0
             
             // setup region
@@ -95,39 +96,39 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     // MARK: - CLLocationManagerDelegate
     
-    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        showAlert("enter \(region.identifier)")
-        monitoredRegions[region.identifier] = Date()
-    }
+//    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+//        showAlert("enter \(region.identifier)")
+//        monitoredRegions[region.identifier] = Date()
+//    }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        showAlert("exit \(region.identifier)")
+        showAlert("exit \(region.identifier) WHOA UR LEAVING! U LOST!!!")
         monitoredRegions.removeValue(forKey: region.identifier)
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        updateRegionsWithLocation(locations[0])
-    }
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        updateRegionsWithLocation(locations[0])
+//    }
     
     // MARK: - Comples business logic
     
-    func updateRegionsWithLocation(_ location: CLLocation) {
-        
-        let regionMaxVisiting = 10.0
-        var regionsToDelete: [String] = []
-        
-        for regionIdentifier in monitoredRegions.keys {
-            if Date().timeIntervalSince(monitoredRegions[regionIdentifier]!) > regionMaxVisiting {
-                showAlert("Thanks for visiting our restaurant")
-                
-                regionsToDelete.append(regionIdentifier)
-            }
-        }
-        
-        for regionIdentifier in regionsToDelete {
-            monitoredRegions.removeValue(forKey: regionIdentifier)
-        }
-    }
+//    func updateRegionsWithLocation(_ location: CLLocation) {
+//        
+//        let regionMaxVisiting = 10.0
+//        var regionsToDelete: [String] = []
+//        
+//        for regionIdentifier in monitoredRegions.keys {
+//            if Date().timeIntervalSince(monitoredRegions[regionIdentifier]!) > regionMaxVisiting {
+//                showAlert("Thanks for visiting our restaurant")
+//                
+//                regionsToDelete.append(regionIdentifier)
+//            }
+//        }
+//        
+//        for regionIdentifier in regionsToDelete {
+//            monitoredRegions.removeValue(forKey: regionIdentifier)
+//        }
+//    }
     
     // MARK: - Helpers
     
