@@ -17,6 +17,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+            let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+            backgroundImage.image = UIImage(named: "ughpls")
+            self.view.insertSubview(backgroundImage, at: 0)
+            
+
+        
         careGiversButton.layer.cornerRadius = 20
         careGiversButton.layer.borderWidth = 1
         careGiversButton.layer.borderColor = UIColor.black.cgColor

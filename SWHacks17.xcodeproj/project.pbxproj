@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A7E72651E7543A600C3993E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E72641E7543A600C3993E /* button.png */; };
+		1A7E726D1E7546AD00C3993E /* ughpls.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E726C1E7546AD00C3993E /* ughpls.png */; };
 		1A88DE721E73FE2300F1BC06 /* ViewMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88DE711E73FE2300F1BC06 /* ViewMap.swift */; };
 		9435D4321E74A9090002BBA2 /* RegionDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */; };
 		9435D4341E74A9130002BBA2 /* RegionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435D4331E74A9130002BBA2 /* RegionProtocol.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A7E72641E7543A600C3993E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = ../../../Downloads/button.png; sourceTree = "<group>"; };
+		1A7E726C1E7546AD00C3993E /* ughpls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ughpls.png; path = ../../../Downloads/ughpls.png; sourceTree = "<group>"; };
 		1A88DE711E73FE2300F1BC06 /* ViewMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewMap.swift; path = ../ViewMap.swift; sourceTree = "<group>"; };
 		9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionDelegateProtocol.swift; path = ../../../Downloads/RegionDelegateProtocol.swift; sourceTree = "<group>"; };
 		9435D4331E74A9130002BBA2 /* RegionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionProtocol.swift; path = ../../../Downloads/RegionProtocol.swift; sourceTree = "<group>"; };
@@ -92,8 +96,9 @@
 				94B124311E739D150034CEFC /* AppDelegate.swift */,
 				94AB9AB11E75141D0000E07C /* MessageComposer.swift */,
 				1A88DE711E73FE2300F1BC06 /* ViewMap.swift */,
-				1A88DEBD1E75107000F1BC06 /* Tempe (2).gpx */,
 				94B124331E739D150034CEFC /* ViewController.swift */,
+				1A7E72641E7543A600C3993E /* button.png */,
+				1A7E726C1E7546AD00C3993E /* ughpls.png */,
 				9435D4331E74A9130002BBA2 /* RegionProtocol.swift */,
 				9435D4311E74A9090002BBA2 /* RegionDelegateProtocol.swift */,
 				94AC66AF1E73D272007DCCA2 /* CaregiverViewController.swift */,
@@ -170,7 +175,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A88DEBE1E75107000F1BC06 /* Tempe (2).gpx in Resources */,
+				1A7E726D1E7546AD00C3993E /* ughpls.png in Resources */,
+				1A7E72651E7543A600C3993E /* button.png in Resources */,
 				94B1243F1E739D160034CEFC /* LaunchScreen.storyboard in Resources */,
 				94AB9AB41E7514260000E07C /* Tempe.gpx in Resources */,
 				94B1243C1E739D160034CEFC /* Assets.xcassets in Resources */,

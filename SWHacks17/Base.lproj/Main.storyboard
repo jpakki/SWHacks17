@@ -37,15 +37,6 @@
                                     <segue destination="VLb-dQ-5Pt" kind="presentation" id="920-DN-lW4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgb-km-cED">
-                                <rect key="frame" x="70" y="475" width="235" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Patient Information"/>
-                                <connections>
-                                    <segue destination="oVS-e0-bq4" kind="presentation" id="pLY-oK-Y4I"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Providing peace of mind for Caregivers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOU-sC-i97">
                                 <rect key="frame" x="70" y="129" width="235" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,6 +51,16 @@
                                 <state key="normal" title="Caregivers"/>
                                 <connections>
                                     <segue destination="7ft-nJ-p96" kind="presentation" id="jUT-5i-Xbv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgb-km-cED">
+                                <rect key="frame" x="70" y="479" width="235" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Patient Information"/>
+                                <connections>
+                                    <segue destination="oVS-e0-bq4" kind="presentation" id="pLY-oK-Y4I"/>
                                 </connections>
                             </button>
                         </subviews>
