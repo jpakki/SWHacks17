@@ -232,7 +232,7 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             self.sendTextMessageButtonTapped()
         }
         let NOAction = UIAlertAction(title: "GPS Directions", style: .default) { (action) in
-            
+            self.direct()
         }
         
         // add the OK action to the alert controller
@@ -264,6 +264,24 @@ class ViewMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
                     self.showMap()
                     
                 }
+        }
+    }
+    
+    func direct(){
+        let geoCoder = CLGeocoder()
+        
+        geoCoder.geocodeAddressString(address) { placemarks, error in
+            
+            if error != nil {
+                print("Geocode failed with error: \(error!.localizedDescription)")
+            } else if placemarks!.count > 0 {
+                let placemark = placemarks![0]
+                let location = placemark.location
+                self.coords = location!.coordinate
+                
+                self.showMap()
+                
+            }
         }
     }
     
